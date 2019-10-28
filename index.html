@@ -16,19 +16,23 @@
             <h1 class="col-12 h2 text-center">Formulaire d'inscription</h1>
         </div>
         <div class="row no-gutters">
-            <form action="post" class="w-100" id="register">
+            <form action="" class="w-100" id="register">
                 <div class="row no-gutters d-flex justify-content-md-between">
-                    <div class="col-12 col-md-5 text-center">
-                        <input class="form-control mb-3" type="text" name="pseudo" id="pseudo" placeholder="Identitifiant" required="required" minlength="5">
-                        <input type="mail" name="mail" id="mail" placeholder="Adresse Email" class="form-control mb-3" required="required" minlength="5">
+                    <div class="col-12 col-md-5 text-center login">
+                        <input class="form-control mb-3" type="text" name="pseudo" id="pseudo"
+                            placeholder="Identitifiant" required="required">
+                        <input type="mail" name="mail" id="mail" placeholder="Adresse Email" class="form-control mb-3"
+                            required="required">
                     </div>
-                    <div class="col-12 col-md-5">
-                        <input type="password" name="pass" id="pass" placeholder="Mot de passe" class="form-control mb-3" required="required" minlength="5">
+                    <div class="col-12 col-md-5 password">
+                        <input type="password" name="pass" id="pass" placeholder="Mot de passe"
+                            class="form-control mb-3" required="required">
                         <input type="password" name="passconf" id="passconf" placeholder="Confirmation mot de passe"
-                            class="form-control mb-3" required="required" minlength="5">
+                            class="form-control mb-3" required="required">
                     </div>
                     <div class="btnContainer col-12 d-flex justify-content-center justify-content-md-start">
-                        <input type="submit" name="submit" id="submit">
+                        <button type="submit" name="submit" id="submit">Envoyer</button>
+                        <button id="reset" type="reset">Reset</button>
                     </div>
                 </div>
             </form>
